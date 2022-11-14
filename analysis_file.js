@@ -16,8 +16,8 @@ for (var main_index = 0; main_index < finances.length; main_index++) {
         // Narrowing to target only number data type
         if (typeof finances[main_index][nested_index] === 'number') {
             total += finances[main_index][nested_index];
-            net = finances[main_index][nested_index];
             netChange = finances[main_index][nested_index] - net;
+            net = finances[main_index][nested_index];
             netChangeArray.push(netChange);
         }
     }
