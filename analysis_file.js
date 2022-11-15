@@ -7,7 +7,7 @@ var netChange = 0;
 var netChangeArray = [];
 var netChangeSum = 0;
 var averageChange = 0;
-// Vars for greatest increase and decrease need to look like: ['string/mth-yr', number/profit||loss]
+// Variables for greatest increase and decrease need to look like: ['string/mth-yr', number/profit||loss]
 var greatestIncrease = ['', 0];
 var greatestDecrease = ['', 0];
 var analysis = '';
@@ -27,15 +27,15 @@ for (var main_index = 0; main_index < finances.length; main_index++) {
             netChange = finances[main_index][nested_index] - net;
             net = finances[main_index][nested_index];
             netChangeArray.push(netChange);
-        }
 
-        // Finding the greatest increase and decrease in the data set
-        if (netChange > greatestIncrease[1]) {
-            greatestIncrease = [finances[main_index][0], finances[main_index][1]];
-        }
+            // Finding the greatest increase and decrease in the data set
+            if (netChange > greatestIncrease[1]) {
+                greatestIncrease = [finances[main_index][0], finances[main_index][1]];
+            }
 
-        if (netChange < greatestDecrease[1]) {
-            greatestDecrease = [finances[main_index][0], finances[main_index][1]];
+            if (netChange < greatestDecrease[1]) {
+                greatestDecrease = [finances[main_index][0], finances[main_index][1]];
+            }
         }
     }
 }
@@ -50,14 +50,14 @@ averageChange = Math.round((netChangeSum / months) * 100) / 100;
 
 
 
-analysis = 
-'Financial Analysis' + '\n' +
-'----------------------------' + '\n' +
-'Total Months: ' + months + '\n' +
-'Total: $' + total + '\n' +
-'Average Change: $' + averageChange + '\n' +
-'Greatest Increase in Profits: ' + greatestIncrease + '\n' +
-'Greatest Decrease in Profits: ' + greatestDecrease;
+analysis =
+    'Financial Analysis' + '\n' +
+    '----------------------------' + '\n' +
+    'Total Months: ' + months + '\n' +
+    'Total: $' + total + '\n' +
+    'Average Change: $' + averageChange + '\n' +
+    'Greatest Increase in Profits: ' + greatestIncrease[0] + ' ' + '($' + greatestIncrease[1] + ')' + '\n' +
+    'Greatest Decrease in Profits: ' + greatestDecrease[0] + ' ' + '($' + greatestDecrease[1] + ')';
 
-// // Logging analysis in the console
+// Logging analysis in the console
 console.log(analysis);
