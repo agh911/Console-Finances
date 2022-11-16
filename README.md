@@ -32,9 +32,6 @@ The following image shows the application's functionality:
 * [Finding the sum of an array.](https://www.w3docs.com/snippets/javascript/how-to-find-the-sum-of-an-array-of-numbers.html)
 * [Calculating the net change.](https://www.cuemath.com/net-change-formula/)
 * [Rounding to two decimals.](https://www.tutorialspoint.com/How-to-format-a-number-with-two-decimals-in-JavaScript)
-* [JavaScript narrowing by type.](https://medium.com/@jackhmwilliams/type-narrowing-in-typescript-44a6757c5a64)
-* [JavaScript narrowing by type.](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
-* [Typeof JS.](https://www.dotnetperls.com/typeof-js)
 * [GitHub Badges.](https://shields.io/)
 
 
