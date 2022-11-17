@@ -19,7 +19,7 @@ The analysis needed to include the following:
 
 The following image shows the application's functionality:
 
-![console_screenshot](images/console_screenshot.png)
+![console_screenshot](assets/images/console_screenshot.png)
 
 
 ## Links
